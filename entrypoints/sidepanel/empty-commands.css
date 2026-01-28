@@ -1,0 +1,35 @@
+/* Empty Commands State */
+.empty-commands-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+}
+
+.empty-commands-text {
+    color: var(--text-400);
+    font-size: 13px;
+    margin: 0;
+}
+
+.add-command-btn-in-folder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    background: var(--accent);
+    border: none;
+    border-radius: var(--radius-md);
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.add-command-btn-in-folder:hover {
+    background: var(--accent-hover);
+}

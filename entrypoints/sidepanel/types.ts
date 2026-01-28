@@ -1,11 +1,9 @@
 export interface Command {
     id: string;
-    name: string;
     command: string;
-    description?: string;
 }
 
-export interface Category {
+export interface Folder {
     id: string;
     name: string;
     icon: string;
@@ -14,5 +12,5 @@ export interface Category {
 }
 
 export interface AppData {
-    categories: Category[];
+    folders: Folder[];
 }

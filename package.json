@@ -1,8 +1,8 @@
 {
-  "name": "gemin-npm-command-manager",
+  "name": "devcommand-npm-manager",
   "description": "Organize and manage your frequently used npm commands by categories",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "wxt",

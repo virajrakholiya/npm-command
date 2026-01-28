@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { Category } from '../types';
+import { Folder } from '../types';
 
-interface AddCategoryModalProps {
-    onAdd: (category: Omit<Category, 'id' | 'commands'>) => void;
+interface AddFolderModalProps {
+    onAdd: (folder: Omit<Folder, 'id' | 'commands'>) => void;
     onClose: () => void;
 }
 
@@ -14,7 +14,7 @@ const COLORS = [
     '#10b981', '#14b8a6', '#06b6d4', '#0ea5e9',
 ];
 
-export default function AddCategoryModal({ onAdd, onClose }: AddCategoryModalProps) {
+export default function AddFolderModal({ onAdd, onClose }: AddFolderModalProps) {
     const [name, setName] = useState('');
     const [color, setColor] = useState(COLORS[0]);
 
@@ -34,7 +34,7 @@ export default function AddCategoryModal({ onAdd, onClose }: AddCategoryModalPro
         <div className="modal-overlay" onClick={onClose}>
             <div className="modal" onClick={(e) => e.stopPropagation()}>
                 <div className="modal-header">
-                    <h2>New Category</h2>
+                    <h2>New Folder</h2>
                     <button className="close-btn" onClick={onClose}>
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                             <line x1="18" y1="6" x2="6" y2="18" />
@@ -44,7 +44,7 @@ export default function AddCategoryModal({ onAdd, onClose }: AddCategoryModalPro
                 </div>
                 <form onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <label>Category Name</label>
+                        <label>Folder Name</label>
                         <input
                             type="text"
                             value={name}
@@ -75,7 +75,7 @@ export default function AddCategoryModal({ onAdd, onClose }: AddCategoryModalPro
                             Cancel
                         </button>
                         <button type="submit" className="btn btn-primary" disabled={!name.trim()}>
-                            Create Category
+                            Create Folder
                         </button>
                     </div>
                 </form>
