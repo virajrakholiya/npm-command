@@ -36,7 +36,7 @@ function App() {
                 <div className="header-top">
                     <div className="logo">
                         <div className="logo-icon-img">
-                            <img src="/icon/48.png" alt="DevCommand" />
+                            <img src="/icons/48.png" alt="DevCommand" />
                         </div>
                     </div>
                     <div className="header-actions">
