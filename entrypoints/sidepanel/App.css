@@ -560,12 +560,9 @@ body {
     margin-left: var(--space-3);
     cursor: pointer;
     transition: all var(--transition-fast);
-    opacity: 0;
-}
-
-.command-item:hover .copy-btn-inline {
     opacity: 1;
 }
+
 
 .copy-btn-inline:hover {
     background: var(--bg-400);
@@ -779,6 +776,7 @@ body {
 
 .add-command-form {
     background: var(--bg-200);
+    margin-top: var(--space-3);
     padding: var(--space-4);
     border-radius: var(--radius-md);
     border: 1px solid var(--border-subtle);
@@ -793,6 +791,7 @@ body {
 
 .add-command-btn {
     width: 100%;
+    margin-top: var(--space-3);
     padding: var(--space-3);
     background: var(--bg-300);
     border: 1px dashed var(--border-default);
